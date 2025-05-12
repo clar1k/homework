@@ -1,0 +1,88 @@
+13.05.2025 2:12:36: Current operator name: KrisMobile
+13.05.2025 2:12:36: Current operator name: JenyaDurkil
+13.05.2025 2:12:36: Current operator name: Peregryadok
+13.05.2025 2:14:37: Current operator name: KrisMobile
+13.05.2025 2:14:37: Current operator name: JenyaDurkil
+13.05.2025 2:14:37: Current operator name: Peregryadok
+13.05.2025 2:15:13: Operator submitted. Phone: +380986549262, Operator: KrisMobile
+13.05.2025 2:15:34: Language changed to: Українська
+13.05.2025 2:15:35: Language changed to: English
+13.05.2025 2:15:35: Language changed to: Українська
+13.05.2025 2:15:35: Language changed to: English
+13.05.2025 2:15:36: Language changed to: Українська
+13.05.2025 2:15:38: Language changed to: English
+13.05.2025 2:15:38: Language changed to: Українська
+13.05.2025 2:15:38: Language changed to: English
+13.05.2025 2:16:50: Card details submission failed: Validation error.
+13.05.2025 2:21:09: method:LoadBanks Add Bank $MonoBank
+13.05.2025 2:21:09: method:LoadBanks Add Bank $PrivatBank
+13.05.2025 2:21:09: Current operator name: KrisMobile
+13.05.2025 2:21:09: Current operator name: JenyaDurkil
+13.05.2025 2:21:09: Current operator name: Peregryadok
+13.05.2025 2:22:11: Card details submitted successfully.
+13.05.2025 2:22:32: Operator submitted. Phone: +380986549262, Operator: KrisMobile
+13.05.2025 2:22:37: Main submit validation failed: Invalid deposit amount. Input: 
+13.05.2025 2:24:27: method:LoadBanks Add Bank $MonoBank
+13.05.2025 2:24:27: method:LoadBanks Add Bank $PrivatBank
+13.05.2025 2:24:27: Current operator name: KrisMobile
+13.05.2025 2:24:27: Current operator name: JenyaDurkil
+13.05.2025 2:24:27: Current operator name: Peregryadok
+13.05.2025 2:24:38: Operator submitted. Phone: +380986549262, Operator: KrisMobile
+13.05.2025 2:25:35: Card details submitted successfully.
+13.05.2025 2:25:46: Displayed fee warning: The fee for this transaction is 150,00%.
+13.05.2025 2:25:47: Main submit validation failed: Card not found or details invalid.
+13.05.2025 2:28:13: method:LoadBanks Add Bank $MonoBank
+13.05.2025 2:28:13: method:LoadBanks Add Card $5168924413220122
+13.05.2025 2:28:13: method:LoadBanks Add Card $5222333344445555
+13.05.2025 2:28:13: method:LoadBanks Add Bank $PrivatBank
+13.05.2025 2:28:13: method:LoadBanks Add Card $4141222233334444
+13.05.2025 2:28:13: method:LoadBanks Add Card $4555666677778888
+13.05.2025 2:28:13: Current operator name: KrisMobile
+13.05.2025 2:28:13: Current operator name: JenyaDurkil
+13.05.2025 2:28:13: Current operator name: Peregryadok
+13.05.2025 2:29:00: method:LoadBanks Add Bank $MonoBank
+13.05.2025 2:29:00: method:LoadBanks Add Card $5168924413220122
+13.05.2025 2:29:00: method:LoadBanks Add Card $5222333344445555
+13.05.2025 2:29:00: method:LoadBanks Add Bank $PrivatBank
+13.05.2025 2:29:00: method:LoadBanks Add Card $4141222233334444
+13.05.2025 2:29:00: method:LoadBanks Add Card $4555666677778888
+13.05.2025 2:29:00: Current operator name: KrisMobile
+13.05.2025 2:29:00: Current operator name: JenyaDurkil
+13.05.2025 2:29:00: Current operator name: Peregryadok
+13.05.2025 2:30:54: Operator submitted. Phone: +380986549262, Operator: KrisMobile
+13.05.2025 2:30:58: Card details submitted successfully.
+13.05.2025 2:31:08: Displayed fee warning: The fee for this transaction is 150,00%.
+13.05.2025 2:31:08: Receipt saved successfully for phone +380986549262, operator KrisMobile, amount 100, charity 4%, masked card ************0122. File: 20250513023108_receipt.xml
+13.05.2025 2:31:16: Displayed fee warning: The fee for this transaction is 150,00%.
+13.05.2025 2:31:16: Receipt generated but not saved as per user preference. Phone: +380986549262, Operator: KrisMobile, Amount: 100, Charity: 4%, Masked Card: ************0122
+13.05.2025 2:37:28: method:LoadBanks Add Bank $MonoBank
+13.05.2025 2:37:28: method:LoadBanks Add Card $5168924413220122
+13.05.2025 2:37:28: method:LoadBanks Add Card $5222333344445555
+13.05.2025 2:37:28: method:LoadBanks Add Bank $PrivatBank
+13.05.2025 2:37:28: method:LoadBanks Add Card $4141222233334444
+13.05.2025 2:37:28: method:LoadBanks Add Card $4555666677778888
+13.05.2025 2:37:28: Current operator name: KrisMobile
+13.05.2025 2:37:28: Current operator name: JenyaDurkil
+13.05.2025 2:37:28: Current operator name: Peregryadok
+13.05.2025 2:37:50: method:LoadBanks Add Bank $MonoBank
+13.05.2025 2:37:50: method:LoadBanks Add Card $5168924413220122
+13.05.2025 2:37:50: method:LoadBanks Add Card $5222333344445555
+13.05.2025 2:37:50: method:LoadBanks Add Bank $PrivatBank
+13.05.2025 2:37:50: method:LoadBanks Add Card $4141222233334444
+13.05.2025 2:37:50: method:LoadBanks Add Card $4555666677778888
+13.05.2025 2:37:50: Current operator name: KrisMobile
+13.05.2025 2:37:50: Current operator name: JenyaDurkil
+13.05.2025 2:37:50: Current operator name: Peregryadok
+13.05.2025 2:37:56: Operator submitted. Phone: +36001, Operator: KrisMobile
+13.05.2025 2:44:27: method:LoadBanks Add Bank $MonoBank
+13.05.2025 2:44:27: method:LoadBanks Add Card $5168924413220122
+13.05.2025 2:44:27: method:LoadBanks Add Card $5222333344445555
+13.05.2025 2:44:27: method:LoadBanks Add Bank $PrivatBank
+13.05.2025 2:44:27: method:LoadBanks Add Card $4141222233334444
+13.05.2025 2:44:27: method:LoadBanks Add Card $4555666677778888
+13.05.2025 2:44:27: Current operator name: KrisMobile
+13.05.2025 2:44:27: Current operator name: JenyaDurkil
+13.05.2025 2:44:27: Current operator name: Peregryadok
+13.05.2025 2:44:38: Invalid phone number entered: +360
+13.05.2025 2:44:44: Invalid phone number entered: +39087
+13.05.2025 2:44:51: Operator submitted. Phone: +38087, Operator: KrisMobile
