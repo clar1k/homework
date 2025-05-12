@@ -9,7 +9,7 @@ using System.Windows.Forms;
 // Assuming Receipt class is in the global namespace or its namespace is imported
 // Assuming CardService class is in the global namespace or its namespace is imported
 
-namespace HomeWork
+namespace hack
 {
     public partial class Form1 : Form
     {
