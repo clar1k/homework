@@ -382,9 +382,7 @@ namespace hack
 
         private bool IsValidPhoneNumber(string phoneNumber)
         {
-            // Simple validation for Ukrainian phone numbers
-            // Accepts formats: +380xxxxxxxxx or 0xxxxxxxxx
-            return System.Text.RegularExpressions.Regex.IsMatch(phoneNumber, @"^(\+380|0)\d{9}$");
+            return operators.ValidatePhoneNumber(phoneNumber);
         }
 
         private void HandleOperatorSubmit(object? sender, EventArgs e)
