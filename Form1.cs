@@ -122,6 +122,7 @@ namespace hack
             lblWelcome.Size = new Size(300, 20);
             lblWelcome.Name = "lblWelcome";
             lblWelcome.Text = languageStrings["English"]["lblWelcome"];
+            this.Controls.Add(lblWelcome);
 
             // Add mobile operator selection
             Label lblOperator = new Label();
@@ -129,6 +130,7 @@ namespace hack
             lblOperator.Size = new Size(150, 20);
             lblOperator.Text = "Mobile Operator:";
             lblOperator.Name = "lblOperator";
+            this.Controls.Add(lblOperator);
 
             ComboBox cboOperator = new ComboBox();
             cboOperator.Location = new Point(20, 120);
@@ -136,24 +138,27 @@ namespace hack
             cboOperator.Name = "cboOperator";
             cboOperator.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            foreach (string op in operators.CurrentOperators)
+            foreach (string operName in operators.CurrentOperators)
             {
-                Logger.Log($"Current operator name: {op}");
-                cboOperator.Items.Add(op);
+                Logger.Log($"Current operator name: {operName}");
+                cboOperator.Items.Add(operName);
             }
 
             cboOperator.SelectedIndex = 0;
+            this.Controls.Add(cboOperator);
 
             Label lblPhone = new Label();
             lblPhone.Location = new Point(20, 160);
             lblPhone.Size = new Size(150, 20);
             lblPhone.Name = "lblPhone";
             lblPhone.Text = languageStrings["English"]["phoneLabel"];
+            this.Controls.Add(lblPhone);
 
             TextBox txtPhone = new TextBox();
             txtPhone.Location = new Point(20, 180);
             txtPhone.Size = new Size(200, 25);
             txtPhone.Name = "txtPhone";
+            this.Controls.Add(txtPhone);
 
             // Add operator submit button (Moved slightly)
             Button btnOperatorSubmit = new Button();
@@ -162,6 +167,7 @@ namespace hack
             btnOperatorSubmit.Name = "btnOperatorSubmit";
             btnOperatorSubmit.Text = "Submit Operator";
             btnOperatorSubmit.Click += HandleOperatorSubmit!;
+            this.Controls.Add(btnOperatorSubmit);
 
             // --- Card Details Input ---
             int cardInputYStart = 220;
