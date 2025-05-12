@@ -2,12 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
-using System.IO; // Required for Path related to Receipt
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
-
-// Assuming Receipt class is in the global namespace or its namespace is imported
-// Assuming CardService class is in the global namespace or its namespace is imported
 
 namespace hack
 {
@@ -20,7 +17,6 @@ namespace hack
         private List<UserData> userData = new List<UserData>();
         private Operators operators = new Operators();
         private List<Bank> banks = new List<Bank>();
-        private CardService cardService; // Add CardService field
 
         // Class to store user data
         private class UserData
@@ -41,11 +37,8 @@ namespace hack
         {
             InitializeComponent();
             InitializeLanguageStrings();
-
-            operators.LoadOperatorsFromFile("./operators.txt");
-            cardService = new CardService();
+            operators.LoadOperatorsFromFile("./data/operators.txt");
             banks = Bank.LoadBanks();
-
             SetupLanguagePicker();
         }
 
