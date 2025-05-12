@@ -664,13 +664,17 @@ namespace hack
             );
             string cardNumber = txtCardNumber.Text;
 
+            // Declare variables before the if statement
+            int expiryMonth;
+            int expiryYear;
+
             bool isCardDetailsInvalid =
                 txtExpiryMonth == null
                 || txtExpiryYear == null
                 || txtCvv == null
                 || txtPinCode == null // Check if PIN TextBox exists
-                || !int.TryParse(txtExpiryMonth.Text, out int expiryMonth)
-                || !int.TryParse(txtExpiryYear.Text, out int expiryYear)
+                || !int.TryParse(txtExpiryMonth.Text, out expiryMonth) // Use pre-declared variable
+                || !int.TryParse(txtExpiryYear.Text, out expiryYear) // Use pre-declared variable
                 // Basic PIN validation
                 || string.IsNullOrWhiteSpace(txtPinCode.Text)
                 || !txtPinCode.Text.All(char.IsDigit);
