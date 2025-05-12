@@ -6,7 +6,7 @@ public class Operators
 {
     public string[] CurrentOperators { get; private set; }
 
-    public void LoadOperatorsFromFile(string filePath)
+    public void LoadOperatorsFromFile(string filePath = "./data/operators.txt")
     {
         try
         {
@@ -14,13 +14,13 @@ public class Operators
         }
         catch (FileNotFoundException)
         {
-            Console.WriteLine($"Error: The file '{filePath}' was not found.");
-            CurrentOperators = Array.Empty<string>(); // Initialize with an empty array if file not found
+            Logger.Log($"Error: The file '{filePath}' was not found.");
+            CurrentOperators = Array.Empty<string>();
         }
         catch (Exception exception)
         {
-            Console.WriteLine($"An error occurred while reading the file: {exception.Message}");
-            CurrentOperators = Array.Empty<string>(); // Initialize with an empty array on other errors
+            Logger.Log($"An error occurred while reading the file: {exception.Message}");
+            CurrentOperators = Array.Empty<string>();
         }
     }
 }

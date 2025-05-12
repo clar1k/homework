@@ -20,7 +20,7 @@ namespace hack
         {
             InitializeComponent();
             InitializeLanguageStrings();
-            operators.LoadOperatorsFromFile("./data/operators.txt");
+            operators.LoadOperatorsFromFile();
             banks = Bank.LoadBanks();
             SetupLanguagePicker();
             InitControls();
@@ -138,7 +138,7 @@ namespace hack
 
             foreach (string op in operators.CurrentOperators)
             {
-                System.Diagnostics.Debug.WriteLine(op);
+                Logger.Log($"Current operator name: {op}");
                 cboOperator.Items.Add(op);
             }
 
