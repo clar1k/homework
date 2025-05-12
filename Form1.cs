@@ -288,11 +288,13 @@ namespace hack
             lblDepositAmount.Size = new Size(150, 20);
             lblDepositAmount.Name = "lblDepositAmount";
             lblDepositAmount.Text = languageStrings["English"]["lblDepositAmount"];
+            this.Controls.Add(lblDepositAmount);
 
             TextBox txtDepositAmount = new TextBox();
             txtDepositAmount.Location = new Point(20, depositInputYStart + 20);
             txtDepositAmount.Size = new Size(100, 25); // Smaller size
             txtDepositAmount.Name = "txtDepositAmount";
+            this.Controls.Add(txtDepositAmount);
 
             // --- Charity Percentage Input ---
             int charityInputYStart =
