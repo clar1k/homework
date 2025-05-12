@@ -13,25 +13,8 @@ namespace hack
         private Dictionary<string, Dictionary<string, string>> languageStrings =
             new Dictionary<string, Dictionary<string, string>>();
 
-        // List to store user data
-        private List<UserData> userData = new List<UserData>();
         private Operators operators = new Operators();
         private List<Bank> banks = new List<Bank>();
-
-        // Class to store user data
-        private class UserData
-        {
-            public string PhoneNumber { get; set; }
-            public string Operator { get; set; }
-            public DateTime RegistrationDate { get; set; }
-
-            public UserData(string phoneNumber, string op)
-            {
-                PhoneNumber = phoneNumber;
-                Operator = op;
-                RegistrationDate = DateTime.Now;
-            }
-        }
 
         public Form1()
         {
@@ -167,9 +150,10 @@ namespace hack
             // Clear existing items
             cboOperator.Items.Clear();
 
-            foreach (string operatorName in operators.CurrentOperators)
+            foreach (string op in operators.CurrentOperators)
             {
-                cboOperator.Items.Add(operatorName);
+                Console.WriteLine(op);
+                cboOperator.Items.Add(op);
             }
 
             cboOperator.SelectedIndex = 0; // Default to first operator
@@ -434,8 +418,6 @@ namespace hack
                         return;
                     }
 
-                    // Store user data
-                    userData.Add(new UserData(phoneNumber, selectedOperator));
                     Logger.Log(
                         $"Operator submitted. Phone: {phoneNumber}, Operator: {selectedOperator}"
                     ); // Log successful submission
@@ -686,20 +668,18 @@ namespace hack
 
             string pinCode = txtPinCode.Text; // Get PIN
 
-            // Assuming Bank.FindUserCard now needs the PIN code
             Card? foundCard = Bank.FindUserCard(
                 banks,
                 cardNumber,
                 expiryMonth,
                 expiryYear,
                 txtCvv.Text,
-                pinCode // Pass PIN code
+                pinCode
             );
 
             double fee = Bank.GetFee(banks, cardNumber);
             Console.WriteLine($"Fee for the bank is {fee}");
 
-            // Display fee warning message box
             string feeWarningTitle = languageStrings[currentLanguage]["feeWarningTitle"];
             string feeWarningMessageTemplate = languageStrings[currentLanguage][
                 "feeWarningMessage"
