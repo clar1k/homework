@@ -18,7 +18,7 @@ public class Bank
 
         foreach (var bank in banks)
         {
-            Logger.Log($"method:LoadBanks Add Bank ${bank.name}");
+            Logger.Log($"method:LoadBanks Add Bank ${bank.Name}");
         }
 
         return banks ?? new List<Bank>();
