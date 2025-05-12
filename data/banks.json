@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "MonoBank",
+    "Fee": 1.5,
+    "Cards": [
+      {
+        "CardNumber": "5168924413220122",
+        "Balance": 100,
+        "Cvv": "422",
+        "ExpiryMonth": 12,
+        "ExpiryYear": 10
+      },
+      { 
+        "CardNumber": "5222333344445555",
+        "Balance": 200,
+        "Cvv": "567",
+        "ExpiryMonth": 1,
+        "ExpiryYear": 23
+      }
+    ]
+  },
+  {
+    "Name": "PrivatBank",
+    "Fee": 2.5,
+    "Cards": [
+      {
+        "CardNumber": "4141222233334444",
+        "Balance": 250,
+        "Cvv": "123",
+        "ExpiryMonth": 6,
+        "ExpiryYear": 25
+      },
+      {
+        "CardNumber": "4555666677778888",
+        "Balance": 500,
+        "Cvv": "987",
+        "ExpiryMonth": 11,
+        "ExpiryYear": 28
+      }
+    ]
+  }
+]
