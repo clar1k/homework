@@ -23,6 +23,7 @@ namespace hack
             operators.LoadOperatorsFromFile("./data/operators.txt");
             banks = Bank.LoadBanks();
             SetupLanguagePicker();
+            InitControls();
         }
 
         private void SetupLanguagePicker()
@@ -33,27 +34,20 @@ namespace hack
             lblLanguage.Size = new Size(80, 20);
             lblLanguage.Text = "Language:";
 
-            // Create the language combo box
             ComboBox cboLanguage = new ComboBox();
             cboLanguage.Location = new Point(100, 20);
             cboLanguage.Size = new Size(150, 25);
             cboLanguage.Name = "cboLanguage";
             cboLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            // Add language options
             cboLanguage.Items.Add("English");
             cboLanguage.Items.Add("Українська");
             cboLanguage.SelectedIndex = 0; // Default to English
 
-            // Add event handler for language change - fix nullability with null-forgiving operator
             cboLanguage.SelectedIndexChanged += CboLanguage_SelectedIndexChanged!;
 
-            // Add controls to form
             this.Controls.Add(lblLanguage);
             this.Controls.Add(cboLanguage);
-
-            // Add example controls to demonstrate localization
-            AddExampleControls();
         }
 
         private void InitializeLanguageStrings()
@@ -120,7 +114,7 @@ namespace hack
             languageStrings["Українська"] = ukrainianStrings;
         }
 
-        private void AddExampleControls()
+        private void InitControls()
         {
             // Add a welcome label
             Label lblWelcome = new Label();
@@ -144,7 +138,7 @@ namespace hack
 
             foreach (string op in operators.CurrentOperators)
             {
-                Console.WriteLine(op);
+                System.Diagnostics.Debug.WriteLine(op);
                 cboOperator.Items.Add(op);
             }
 
@@ -669,7 +663,7 @@ namespace hack
             );
 
             double fee = Bank.GetFee(banks, cardNumber);
-            Console.WriteLine($"Fee for the bank is {fee}");
+            System.Diagnostics.Debug.WriteLine($"Fee for the bank is {fee}");
 
             string feeWarningTitle = languageStrings[currentLanguage]["feeWarningTitle"];
             string feeWarningMessageTemplate = languageStrings[currentLanguage][
