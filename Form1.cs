@@ -658,8 +658,8 @@ namespace hack
             string cardNumber = txtCardNumber.Text;
 
             // Declare variables before the if statement
-            int expiryMonth;
-            int expiryYear;
+            int expiryMonth = 0;
+            int expiryYear = 0;
 
             bool isCardDetailsInvalid =
                 txtExpiryMonth == null
