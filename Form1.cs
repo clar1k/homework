@@ -385,7 +385,7 @@ namespace hack
             
             var operatorControl = Controls["cboOperator"] as ComboBox;
 
-            return operators.ValidatePhoneNumber(phoneNumber, operatorControl.selectedItem);
+            return operators.ValidatePhoneNumber(phoneNumber, operatorControl.SelectedItem);
         }
 
         private void HandleOperatorSubmit(object? sender, EventArgs e)
