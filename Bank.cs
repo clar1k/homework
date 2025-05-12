@@ -15,9 +15,10 @@ public class Bank
         string jsonString = File.ReadAllText(filePath);
         var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         List<Bank> banks = JsonSerializer.Deserialize<List<Bank>>(jsonString, options);
-        
-        foreach (var bank in banks) {
-            Logger.Log($"method:LoadBanks Add Bank ${bank.name}")
+
+        foreach (var bank in banks)
+        {
+            Logger.Log($"method:LoadBanks Add Bank ${bank.name}");
         }
 
         return banks ?? new List<Bank>();
