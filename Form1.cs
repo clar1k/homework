@@ -499,10 +499,14 @@ namespace hack
 
             string pinCode = txtPinCode.Text; // Get PIN code
 
+            // Declare variables before the if statement
+            int expiryMonth;
+            int expiryYear;
+
             // Basic validation: Check if month/year are integers and PIN is valid (basic example)
             if (
-                !int.TryParse(txtExpiryMonth.Text, out int expiryMonth)
-                || !int.TryParse(txtExpiryYear.Text, out int expiryYear)
+                !int.TryParse(txtExpiryMonth.Text, out expiryMonth) // Use pre-declared variable
+                || !int.TryParse(txtExpiryYear.Text, out expiryYear) // Use pre-declared variable
                 // Basic PIN validation (e.g., not empty, numeric)
                 || string.IsNullOrWhiteSpace(pinCode)
                 || !pinCode.All(char.IsDigit)
