@@ -25,8 +25,10 @@ public class Bank
                 {
                     Logger.Log($"method:LoadBanks Add Card ${card.CardNumber}");
                 }
-            } else { 
-                Logger.Log($"method:LoadBanks Can't parse cards")
+            }
+            else
+            {
+                Logger.Log($"method:LoadBanks Can't parse cards");
             }
         }
 
