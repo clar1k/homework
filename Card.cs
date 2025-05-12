@@ -65,8 +65,7 @@ public class Card
             return false;
         }
 
-        // Added basic PIN validation (can be expanded)
-        if (string.IsNullOrWhiteSpace(pinCode) || !pinCode.All(char.IsDigit) || pinCode.Length != 4) // Example: 4 digits
+        if (string.IsNullOrWhiteSpace(pinCode) || !pinCode.All(char.IsDigit))
         {
             return false;
         }
