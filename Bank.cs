@@ -19,6 +19,15 @@ public class Bank
         foreach (var bank in banks)
         {
             Logger.Log($"method:LoadBanks Add Bank ${bank.Name}");
+            if (bank.Cards != null)
+            {
+                foreach (var card in bank.Cards)
+                {
+                    Logger.Log($"method:LoadBanks Add Card ${card.CardNumber}");
+                }
+            } else { 
+                Logger.Log($"method:LoadBanks Can't parse cards")
+            }
         }
 
         return banks ?? new List<Bank>();
