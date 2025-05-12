@@ -382,7 +382,10 @@ namespace hack
 
         private bool IsValidPhoneNumber(string phoneNumber)
         {
-            return operators.ValidatePhoneNumber(phoneNumber);
+            
+            var operatorControl = Controls["cboOperator"] as ComboBox;
+
+            return operators.ValidatePhoneNumber(phoneNumber, operatorControl.selectedItem);
         }
 
         private void HandleOperatorSubmit(object? sender, EventArgs e)
