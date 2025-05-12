@@ -142,23 +142,14 @@ namespace hack
             cboOperator.Name = "cboOperator";
             cboOperator.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            // Add operator options
-            cboOperator.Items.Add("PeregryadokCell");
-            cboOperator.Items.Add("KrisMobile");
-            cboOperator.Items.Add("Durkilfone");
-
-            // Clear existing items
-            cboOperator.Items.Clear();
-
             foreach (string op in operators.CurrentOperators)
             {
                 Console.WriteLine(op);
                 cboOperator.Items.Add(op);
             }
 
-            cboOperator.SelectedIndex = 0; // Default to first operator
+            cboOperator.SelectedIndex = 0;
 
-            // Add phone number input field with label
             Label lblPhone = new Label();
             lblPhone.Location = new Point(20, 160);
             lblPhone.Size = new Size(150, 20);
